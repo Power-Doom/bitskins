@@ -72,9 +72,9 @@ module.exports = class BitSkins {
    *
    * @return {Promise}
    */
-  getAllItemPrices() {
+  getAllItemPrices(options) {
 
-    return this._callAPI('get_all_item_prices');
+    return this._callAPI('get_all_item_prices', options);
 
   }
 
